@@ -15,3 +15,10 @@ jobs:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         issue-message: "Super das du mir ein Issue schreibts"
         pr-message: " ... irgendwas"
+
+        uses: cinotify/github-action@main
+        with:
+          to: 'tooktook2014@gmail.com'
+          subject: 'building main'
+          body: 'This is a notification from GitHub actions.'
+          attachment: 'artifacts.zip'
