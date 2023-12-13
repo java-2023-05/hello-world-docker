@@ -9,8 +9,6 @@ jobs:
       issues: write
       pull-requests: write
 
-
-
     steps:
     - uses: actions/first-interaction@v1
       with:
@@ -18,8 +16,8 @@ jobs:
         issue-message: "Super das du mir ein Issue schreibts"
         pr-message: " ... irgendwas"
 
-        uses: cinotify/github-action@main
-        with:
+    - uses: cinotify/github-action@main
+      with:
           to: 'tooktook2014@gmail.com'
           subject: 'building main'
           body: 'This is a notification from GitHub actions.'
